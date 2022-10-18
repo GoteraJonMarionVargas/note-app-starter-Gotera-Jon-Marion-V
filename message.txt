@@ -1,1 +1,1 @@
-[{"id":"02","name":"ivan","address":"kabugaan","course":"bsit"},{"id":"03","name":"steven","address":"padre diaz","course":"bsit"},{"id":"04","name":"jordan","address":"sies","course":"bsit"}]
+[{"id":"03","name":"steven","address":"padre diaz","course":"bsit"},{"id":"04","name":"jordan","address":"sies","course":"bsit"}]

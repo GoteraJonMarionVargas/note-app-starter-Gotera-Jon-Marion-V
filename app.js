@@ -50,7 +50,6 @@ if (data [2]=== 'update'){
     update (paper, oldPaper)
     
     present (read())
-
 }
 
 
