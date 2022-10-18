@@ -1,13 +1,13 @@
 const fs = require ('fs')
 
-const add = function (paper =[] , oldPaper){
-    let finalPaper = JSON.parse (oldPaper)
+const add = function (note =[] , oldNote){
+    let finalNote = JSON.parse (oldNote)
 
-    finalPaper.push (paper)
+    finalNote.push (note)
 
-    let objectPaper = JSON.stringify(finalPaper)
+    let objectNote = JSON.stringify(finalNote)
 
-    fs.writeFileSync ('message.txt' , objectPaper)
+    fs.writeFileSync ('output.txt' , objectNote)
 
 }
 module.exports = add 

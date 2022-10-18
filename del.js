@@ -1,11 +1,11 @@
 const fs = require ('fs')
 
-const del = function (num, oldPaper){
-    const paper = JSON.parse(oldPaper)
-    const newPaper = paper.filter(function(n,idx){
-        return n.address !== num 
+const del = function (num, oldNote){
+    const note = JSON.parse(oldNote)
+    const newNote = note.filter(function(n,idx){
+        return n.id !== num 
 
     }) 
-    fs.writeFileSync('./message.txt', JSON.stringify(newPaper))
+    fs.writeFileSync('./output.txt', JSON.stringify(newPaper))
 }
 module.exports = del

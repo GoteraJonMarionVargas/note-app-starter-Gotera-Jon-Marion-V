@@ -1,6 +1,6 @@
-const present = function(paper){
-    let newPaper = JSON.parse (paper)
+const present = function(note){
+    let newNote = JSON.parse (note)
 
-    console.log(newPaper)
+    console.log(newNote)
 }
 module.exports = present

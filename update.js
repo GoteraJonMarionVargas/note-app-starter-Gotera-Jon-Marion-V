@@ -1,15 +1,15 @@
 const fs  = require ('fs')
 
-const update = function (paper , oldPaper){
-    const oPaper = JSON.parse ( oldPaper)
-    const newPaper =oPaper.map(function (n,idx){
-        if (n.id == paper.id ){
-          n.name = paper.name
-          n.address = paper.address
-          n.course = paper.course
+const update = function (note , oldNote){
+    const oNote = JSON.parse ( oldNote)
+    const newNote =oNote.map(function (n,idx){
+        if (n.id == note.id ){
+          n.name = note.name
+          n.age = note.age
+          n.address = note.address
         }
-        return n
+        return n 
     })
-fs.writeFileSync('./message.txt', JSON.stringify(newPaper))
+fs.writeFileSync('./output.txt', JSON.stringify(newNote))
 }
 module.exports = update

@@ -6,21 +6,21 @@ const del = require ('./del')
 const update = require ('./update')
 const data = process.argv
 
-var paper = {}
+var note = {}
  
 if (data[2] == 'add'){
     // build object
-    paper = {
+    note = {
         id: data[3],
         name: data[4],
-        address: data[5],
-        course: data [6]
+        age: data[5],
+        address: data [6]
         
 
 
     }
-    var oldPaper = read ()
-    add (paper , oldPaper)
+    var oldNote = read()
+    add (note , oldNote)
     present (read())
 
 }
@@ -32,22 +32,22 @@ if  (data[2] == 'read'){
 
 if (data [2] ==='delete'){
     let address = data [3]
-    let oldPaper= read()
+    let oldNote= read()
 
-    del (address, oldPaper)
+    del (address, oldNote)
 
     console.log (read())
 
 }
 if (data [2]=== 'update'){
-    paper = {
+    note = {
         id:data [3],
         name:data [4],
-        address:data [5],
-        course:data [6]
+        age:data [5],
+        address:data [6]
     }
-    let oldPaper= read()
-    update (paper, oldPaper)
+    let oldNote = read()
+    update (note, oldNote)
     
     present (read())
 }
